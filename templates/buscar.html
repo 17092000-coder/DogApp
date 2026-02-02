@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block contenidos %}
+
+<div class="container-fluid bg-dark mt-5 text-white">
+  
+  <h2 class="text-center mb-4">Buscar raza de perro</h2>
+
+  <form action="/resultado" method="get" class="text-center">
+
+    <label class="form-label mb-2">Nombre de la raza</label>
+
+    <div class="d-flex justify-content-center">
+      <input 
+        type="text" 
+        name="raza" 
+        placeholder="Ej. Labrador"
+        required
+      >
+      <button type="submit" class="btn btn-success">
+        Buscar
+      </button>
+
+    </div>
+
+    <a href="/" class="btn btn-primary mt-3">Volver</a>
+
+  </form>
+
+</div>
+
+{% endblock %}
